@@ -39,6 +39,7 @@ let domstuff = document.querySelector(".autocompleter");
 
 search.onkeyup = function () {
   let saul = filteringAnArray(rickAndMorty, search.value);
+  domstuff.innerHTML = ``;
 
   if (search.value === ``) {
     domstuff.innerHTML = ``;
